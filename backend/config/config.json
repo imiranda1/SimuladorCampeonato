@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "admin",
+    "password": "adminaws",
+    "database": "simulador_campeonato",
+    "host": "database-1.cne4pisah95x.sa-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "admin",
+    "password": "adminaws",
+    "database": "simulador_campeonato",
+    "host": "database-1.cne4pisah95x.sa-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "admin",
+    "password": "adminaws",
+    "database": "simulador_campeonato",
+    "host": "database-1.cne4pisah95x.sa-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
