@@ -1,16 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import Hello from './views/index';
-//import Register from './pages/Register';
-//import Profile from './pages/Profile';
-//import NewIncident from './pages/NewIncident';
+import ListarCampeonato from './views/listarCampeonatos/index';
+import NovoCampeonato from './views/novoCampeonato/index';
+import IncluirTimeCampeonato from './views/novoCampeonato/viewIncluirTimes';
+import NovoTime from './views/novoTime/index';
+import ListarEquipes from './views/listarEquipes/index';
+import ClassificacaoCampeonato from './views/listarCampeonatos/viewTabelaClassificacao';
+
 
 export default function Routes(){
     return(
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Hello} />
+                <Route path="/" exact component={ListarCampeonato} />
+                <Route path="/novo-campeonato" exact component={NovoCampeonato} />
+                <Route path="/incluir-equipes" exact component={IncluirTimeCampeonato} />
+                <Route path="/nova-equipe" exact component={NovoTime} />
+                <Route path="/listar-equipes" exact component={ListarEquipes} />
+                <Route path="/classificacao" exact component={ClassificacaoCampeonato} />
             </Switch>
         </BrowserRouter>
     );
