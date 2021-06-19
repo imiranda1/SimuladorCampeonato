@@ -12,4 +12,4 @@ Tela inicial apresentará todos os campeonatos criados e a opção de criar um n
 
 Na opção de gerenciamento do campeonato será possível listar todas as partidas e a tabela de classificação, ao alterar o placar da partida e salvar a tabela de classificação será atualizada, também será possível cancelar o campeonato. 
 
-A aplicação terá também a opção de listar todos os times do campeonato com a opção de apenas alterar dados cadastrais do time. 
+A aplicação terá também a opção de listar todos os times do campeonato com a opção de apenas alterar dados cadastrais do time. salve
