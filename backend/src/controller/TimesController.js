@@ -6,8 +6,8 @@ module.exports = {
         if (!result) {
             return response.status(400).end();
         }
-
-        var sql = `INSERT INTO equipes (eqp_nome, eqp_sigla) VALUES('${result.nome}', '${result.sigla}')`;
+        
+        var sql = `INSERT INTO equipes (eqp_nome, eqp_sigla) VALUES('${result.nomeTime}', '${result.sigla}')`;
 
         connection.query(sql, function (err, result) {
             if (err) {

@@ -9,9 +9,9 @@ export default function ListarEquipes() {
         })
     }, [equipes]);
     return (
-        <div class="container-fluid">
-            <h3 style={{ 'text-align': 'center' }}>Lista de Equipes</h3>
-            <table class="table table-striped">
+        <div className="container-fluid">
+            <h3 style={{ 'textAlign': 'center' }}>Lista de Equipes</h3>
+            <table className="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
