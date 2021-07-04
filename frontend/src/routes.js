@@ -7,7 +7,7 @@ import IncluirTimeCampeonato from './views/novoCampeonato/viewIncluirTimes';
 import NovoTime from './views/novoTime/index';
 import ListarEquipes from './views/listarEquipes/index';
 import ClassificacaoCampeonato from './views/listarCampeonatos/viewTabelaClassificacao';
-
+import Partidas from './views/listaPartidas/index';
 
 export default function Routes(){
     return(
@@ -19,6 +19,7 @@ export default function Routes(){
                 <Route path="/nova-equipe" exact component={NovoTime} />
                 <Route path="/listar-equipes" exact component={ListarEquipes} />
                 <Route path="/classificacao" exact component={ClassificacaoCampeonato} />
+                <Route path="/partidas" exact component={Partidas} />
             </Switch>
         </BrowserRouter>
     );

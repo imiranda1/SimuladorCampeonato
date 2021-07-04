@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import api from '../../services/api';
 
 export default function IncluirTimeCampeonato() {
-
+    const [equipes, setEquipes] = useState([]);
+    useEffect(() => {
+        api.get('equipes').then(response => {
+            setEquipes(response.data);
+        })
+    }, [equipes]);
     return (
         <div class="container-fluid">
             <h3 style={{ 'text-align': 'center' }}>Lista de Equipes</h3>
@@ -17,14 +23,16 @@ export default function IncluirTimeCampeonato() {
                     </tr>
                 </thead>
                 <tbody>
+                {equipes.map(equipe => (
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Nome</td>
-                        <td>N.O.M.E</td>
+                        <th scope="row">{equipe.eqp_id}</th>
+                        <td>{equipe.eqp_nome}</td>
+                        <td>{equipe.eqp_sigla}</td>
                         <td style={{ 'text-align': 'center' }}>
                             <a href="/incluir-equipe" class="btn btn-sm btn-outline-success">Selecionar</a>
                         </td>
                     </tr>
+                     ))}
                 </tbody>
             </table>
         </div>
